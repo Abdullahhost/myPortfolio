@@ -43,8 +43,8 @@ const FAQSection = () => {
     }
 
     return (
-        <div className="bg-white w-full h-screen p-12">
-            <h1 className="text-3xl text-center my-12">Single Faq Section</h1>
+        <div className="bg-white w-full h-fit px-2 md:px-8 lg:px-20 py-12">
+            <h1 className="text-[1.8rem] md:text-[2rem]  lg:text-[2.2rem] font-bold text-black text-center my-12">Single Faq Section</h1>
 
             {faqData.map((ele, index) => {
                 return <div key={ele.id} className={`min-w-[100%] my-2 px-4 faqwrapper bg-[#f0efef] ${selectedFaq === index ? "faqOpen" : ""}`} onClick={() => toggleFaq(index)} >

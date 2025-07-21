@@ -3,6 +3,7 @@
   animation: scaleDownToTop 1.2s linear 1;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
+  will-change: border;
 }
 
 @keyframes scaleDownToTop {

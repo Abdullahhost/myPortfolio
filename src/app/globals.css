@@ -183,26 +183,32 @@ body {
 }
 @keyframes animateScroll {
   from {
+    -webkit-transform: translateX(0%);
     transform: translateX(0%);
   }
   to {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
 
 @keyframes animateScroll2 {
   from {
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
   to {
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
 }
 @keyframes animateScroll3 {
   from {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
   to {
+    -webkit-transform: translateX(0%);
     transform: translateX(0%);
   }
 }
@@ -258,11 +264,14 @@ body {
   gap: 0.8rem;
   animation: animateScroll var(--t) linear infinite;
   filter: grayscale(0);
+  will-change: transform;
 }
 .scroller .reverseScroll {
+  will-change: transform;
   animation: animateScroll3 var(--t) linear infinite;
 }
 .scrollerTest .reverseScroll {
+  will-change: transform;
   animation: animateScroll2 var(--t) linear infinite;
 }
 .scroller_inner img {
@@ -455,9 +464,11 @@ body {
 
 @keyframes animateScrollTest {
   from {
+    -webkit-transform: translateY(0%);
     transform: translateY(0%);
   }
   to {
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
 }
@@ -666,6 +677,6 @@ body {
 }
 @media screen and (max-width: 880px) {
   .controlLargeScreen {
-    width: min(100% - 0.1rem, 160ch);
+    width: min(100% - 0rem, 160ch);
   }
 }

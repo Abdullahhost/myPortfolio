@@ -2,12 +2,13 @@
 import Image from "next/image"
 import Button from "../button/Button"
 import LinkBox from "./LinkBox"
+import UpdateDate from "../UpdateDate"
 
 
 const Footer = () => {
     return (
         <div className="w-full relative overflow-hidden min-h-[70vh] flex flex-col justify-between">
-            <div className="px-8 py-12 md:px-24 md:py-24 ">
+            <div className="px-2 py-12 md:px-8 lg:px-20 md:py-24 ">
 
                 <div className="flex-col lg:flex-row flex justify-start gap-8">
                     <div className="relative h-24 w-24 md:min-w-24 md:min-h-24 md:max-h-24 activeStatus md:max-w-24 mt-0 md:-mt-3">
@@ -22,9 +23,9 @@ const Footer = () => {
                     </div>
                     <div className="w-full">
 
-                        <h2 className="text-neutral-50 text-[1.8rem] md:text-[2.2rem] lg:text-[3.2em] first-letter:text-[#3D42FB] first-letter:font-bold inline-block">Let’s build your digital success together. </h2>
+                        <h2 className="text-neutral-50 text-[1.5rem] md:text-[1.8rem] lg:text-[2.1rem] first-letter:text-[#3D42FB] first-letter:font-bold inline-block">Let’s build your digital success together. </h2>
                         <br />
-                        <small className="text-[1rem] md:text-[1.1rem] lg:text-[1.3rem] text-neutral-400 block w-full lg:w-4/6 mt-4">Reach out to discuss your project needs. I’m here to help with innovative web solutions tailored to your vision.</small>
+                        <small className="text-[.9rem] md:text-[1rem] lg:text-[1.2rem] text-neutral-400 block w-full lg:w-4/6 mt-4">Reach out to discuss your project needs. I’m here to help with innovative web solutions tailored to your vision.</small>
 
                     </div>
 
@@ -48,8 +49,8 @@ const Footer = () => {
                 <LinkBox />
 
             </div>
-            <div className="verticalText absolute bottom-8 right-10 text-white">
-                Version &nbsp;: &nbsp; {new Date().getFullYear()}
+            <div className="verticalText absolute bottom-8 right-4 lg:right-10 text-slate-300">
+                Version &nbsp;: &nbsp; <UpdateDate />
             </div>
 
         </div>

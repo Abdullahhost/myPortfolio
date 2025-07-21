@@ -29,7 +29,7 @@ const ResponsiveMenu = () => {
                 }}
 
                 className={`fixed top-[0%] lg:top-[-25%] w-full md:w-2/4 h-full lg:h-[150vh] 
-                    bg-black shadow-2xl flex flex-col items-center justify-center
+                    bg-black shadow-2xl flex flex-col items-center justify-center will-change-transform
                      
                     ${state.toggleMenu === true ? "right-0  rounded-none" :
                         "right-[-100%] md:right-[-50%] rounded-tl-[400%] rounded-bl-[400%]"} 

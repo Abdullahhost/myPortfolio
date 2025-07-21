@@ -1,9 +1,10 @@
+import UpdateDate from "@/app/components/UpdateDate"
 
 
 const AboutBanner = () => {
     return (
         <section
-            className="bg-white pb-10 pt-16 px-8 md:pt-28 md:pb-16 md:px-20 w-full h-fit min-h-[calc(100vh_-_96px)]
+            className="bg-white pb-10 pt-16 px-2 md:px-8 md:pt-28 md:pb-16 lg:px-20 w-full h-fit min-h-[calc(100vh_-_96px)]
                   lg:min-h-[calc(100vh_-_96px)] overflow-hidden flex justify-between
                  flex-wrap lg:flex-nowrap lg:gap-0 gap-20">
             <div className="relative w-full">
@@ -27,7 +28,7 @@ const AboutBanner = () => {
             </div>
             <div className="flex flex-col justify-end items-start gap-4 lg:gap-2 max-w-full 
                 md:max-w-[50%] lg:max-w-[20vw]">
-                <h2 className="font-bold"> <small className="text-lg"> 2024</small ></h2>
+                <h2 className="font-bold"> <small className="text-lg"><UpdateDate /> </small ></h2>
                 <p className="text-sm">Hey, great to see you!. I'm a Full Stack Web Developer. Skilled in both front-end and back-end technologies, I deliver scalable, efficient, and high-quality web solutions. </p>
             </div>
 

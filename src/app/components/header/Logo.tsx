@@ -17,7 +17,7 @@ const Logo = () => {
         <div ref={divRef}
             onMouseMove={(e) => handleMouseMove(e, divRef, textRef)}
             onMouseLeave={(e) => handleMouseOut(e, divRef, textRef)}
-            className="p-4 group flex items-center gap-2 w-fit 
+            className="py-4 group flex items-center gap-2 w-fit 
                    cursor-pointer rounded-md h-fit" >
 
             <div className="group-hover:animate-spin">

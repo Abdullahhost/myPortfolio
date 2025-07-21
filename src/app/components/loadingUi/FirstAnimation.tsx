@@ -32,7 +32,7 @@ const FirstAnimation = () => {
         <div style={{ zIndex: "999" }}
             className="fadeToTopAnimation transition-all 
                     fixed bottom-[-130%] left-[-25%] z-50 w-[150vw] h-screen
-                  bg-black flex items-center justify-center zIndex" >
+                  bg-black hidden lg:flex items-center justify-center zIndex" >
 
             <h3 className="animate-bounce text-5xl font-semibold text-white">
                 {path === "/" ? "Home" : path.replace("/", "").toLocaleUpperCase()}

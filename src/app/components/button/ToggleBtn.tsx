@@ -42,7 +42,7 @@ const ToggleBtn = () => {
                 title="Toggle menu"
                 onClick={() => dispatch({ type: "TOGGLE_MENU" })}
                 style={{ zIndex: "800" }}
-                className={`fixed top-[10px] right-[15px] md:top-[25px] md:right-[20px] w-[70px] bg-black overflow-hidden p-5 h-[70px] rounded-full flex flex-col items-center justify-center`}
+                className={`fixed top-[10px] right-[15px] md:top-[15px] md:right-[20px] w-[70px] bg-black overflow-hidden p-5 h-[70px] rounded-full flex flex-col items-center justify-center`}
                 onMouseMove={(e) => handleMouseMove(e, divRef, contentRef)}
                 onMouseOut={(e) => handleMouseOut(e, divRef, contentRef)}
             >

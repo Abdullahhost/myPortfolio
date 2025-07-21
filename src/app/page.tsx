@@ -15,11 +15,11 @@ function HomePage() {
     <>
       <Startup />
       <FirstAnimation />
-      <header className="w-full bgGradient controlLargeScreen border-r border-l shadow-lg">
+      <header className="w-full bgGradient controlLargeScreen shadow-lg">
         <Header />
         <Banner />
       </header>
-      <main className="controlLargeScreen border-r border-l" >
+      <main className="controlLargeScreen" >
         <WhatWeDo />
         <AboutSection />
         <WhyChoseUs />

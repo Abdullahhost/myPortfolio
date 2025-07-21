@@ -44,6 +44,15 @@ const WorkSection = () => {
             y: clientY
         }
     }
+    const handleTouches = (event: any) => {
+        if (event.changedTouches.length > 0) {
+            const { clientX, clientY } = event.changedTouches[0];
+            mouse.current = {
+                x: clientX,
+                y: clientY
+            }
+        }
+    }
 
     const moveCircle = (x: number, y: number) => {
 
@@ -109,9 +118,11 @@ const WorkSection = () => {
         mainRef.current!.addEventListener("mouseenter", testMove)
         mainRef.current!.addEventListener("mouseleave", testRemoveMove)
         mainRef.current!.addEventListener("mousemove", manageMouseMove)
+        mainRef.current!.addEventListener("touchstart", handleTouches)
 
         return () => {
             window.removeEventListener("mousemove", manageMouseMove)
+            window.removeEventListener("touchend", handleTouches)
             window.removeEventListener("mouseenter", testMove)
             window.removeEventListener("mouseleave", testRemoveMove)
         }
@@ -143,12 +154,12 @@ const WorkSection = () => {
                     const { PCategory, pLink, pName, pImage } = ele
 
                     return (<Link scroll={true} key={pName} href={pLink} onMouseEnter={() => handleMouseEnter(pName)}
-                        className="flex testClass group items-center justify-between px-0 lg:px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-8">
+                        className="flex testClass group items-center justify-between px-0 lg:px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-4">
                         <h2 className="hidden md:block text-2xl md:text-3xl lg:text-4xl text-neutral-700 font-bold group-hover:animate-pulse transition-all">{pName}</h2>
                         <h3 className="hidden md:block text-sm md:text-lg">{PCategory}</h3>
 
 
-                        <div className="md:hidden w-full flex gap-2 testClass group items-center justify-between px-6 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-8">
+                        <div className="md:hidden w-full flex gap-2 testClass group items-center justify-between px-2 py-12 md:px-12 md:py-16 cursor-pointer hover:bg-neutral-50 hover:text-black transition-all border-b hover:px-4">
                             <div>
 
                                 <h2 className="text-xl text-neutral-700 font-bold group-hover:animate-pulse transition-all">{pName}</h2>

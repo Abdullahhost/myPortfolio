@@ -33,7 +33,7 @@ const AboutSection = () => {
 
     return (
 
-        <div ref={aboutRef} className="flex justify-between items-center flex-wrap lg:flex-nowrap gap-12 lg:gap-24 relative py-20 px-8 md:px-12 lg:px-20 overflow-hidden">
+        <div ref={aboutRef} className="flex justify-between items-center flex-wrap lg:flex-nowrap gap-12 lg:gap-24 relative py-20 px-2 md:px-12 lg:px-20 overflow-hidden">
 
             <div className="full">
                 <Image

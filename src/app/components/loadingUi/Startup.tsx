@@ -17,7 +17,7 @@ const Startup = () => {
     }, [])
 
     return (
-        <div>
+        <div className="hidden lg:block">
             {startUp === true ? <>
                 <div style={{ zIndex: "1000" }}
                     className="fadeToTopAnimation

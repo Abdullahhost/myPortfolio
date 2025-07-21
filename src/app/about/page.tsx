@@ -1,6 +1,6 @@
-import React from 'react'
-// import Startup from '../components/loadingUi/Startup'
-// import FirstAnimation from '../components/loadingUi/FirstAnimation'
+
+import Startup from '../components/loadingUi/Startup'
+import FirstAnimation from '../components/loadingUi/FirstAnimation'
 import Header from '../components/header/Header'
 import AboutBanner from './components/AboutBanner'
 import AboutWe from './components/AboutWe'
@@ -13,8 +13,8 @@ import SkillSection from './components/SkillSection'
 const page = () => {
     return (
         <>
-            {/* <Startup />
-            <FirstAnimation /> */}
+            <Startup />
+            <FirstAnimation />
             <header className="w-full bgGradient controlLargeScreen ">
                 <Header />
             </header>

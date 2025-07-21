@@ -7,7 +7,7 @@ const AboutWe = () => {
 
     const [showDetails, setShowDetails] = useState<boolean>(true)
     return (
-        <section className="w-full py-12 px-4 md:pt-40 md:px-20  bg-white">
+        <section className="w-full py-12 px-2 md:pt-40 md:px-8 lg:px-20 bg-white">
             <div>
                 <h2 className="relative text-[8vw] py-8 lg:pb-24 leading-9 md:text-[5vw] lg:text-[3.9vw]">
                     <span className="-rotate-[0deg] inline-block">W</span>

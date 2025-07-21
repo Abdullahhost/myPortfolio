@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const ProjectOverview = () => {
     return (
-        <div className='h-[120vh] lg:mt-[200px] scrollerTest'>
+        <div className='h-[120vh] scrollerTest'>
             <div style={{ "--t": '90s' } as React.CSSProperties} className='scroller_innerTest w-full'>
                 {projectList.map((pData) => {
                     return (
@@ -82,8 +82,8 @@ const ProjectOverviewReverse = () => {
 
 const HomePageBannerAnimation = () => {
     return (
-        <div className='w-full min-h-full flex justify-end -z-50'>
-            <div className='flex scale-150 lg:scale-90 min-h-full w-[80%] mt-[50px] items-end gap-2 glowEffect'>
+        <div className='w-full min-h-full  flex justify-end -z-50'>
+            <div className='flex scale-150 translate-y-[20%] lg:translate-y-0 lg:scale-90 min-h-[60vh] lg:min-h-full w-[80%]  items-end gap-2 glowEffect'>
                 <ProjectOverview />
                 <ProjectOverviewReverse />
                 <ProjectOverview />

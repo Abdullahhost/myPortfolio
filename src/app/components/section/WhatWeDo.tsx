@@ -17,9 +17,9 @@ const WhatWeDo = () => {
 
             </div> : ""
             }
-            <h2 className="text-[5.3vw] md:text-[2.9vw]  lg:text-[2.4vw] font-bold uppercase my-6 text-white">What We Do</h2>
+            <h2 className="text-[1.8rem] md:text-[2rem]  lg:text-[2.2rem] font-bold uppercase my-6 text-white">What We Do</h2>
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center p-4 md:p-6 lg:p-16 ">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center p-2 md:p-6 lg:p-16 ">
                 <HoverFeatures color1="rgba(68,36,164,1)" color2="rgba(84,212,228,1) 92.7% )" title="Webdesign & Development">
                     <div className="">
 
