@@ -12,7 +12,7 @@ const MailingForm = () => {
                     width={500}
                     height={500}
                     alt="Profile"
-                    src={"/contuctg.jpg"}
+                    src={"/handshake.jfif"}
                     priority={true}
                 />
             </div>
