@@ -12,26 +12,26 @@ const HoverFeatures: React.FC<{ children: React.ReactNode, title: string, color1
     const [dropdownMenuOpen, setDropDownMenu] = useState<boolean>(false)
 
     const { state, dispatch } = useContext(ToggleContext)
+    const handleCloseModal = () => {
+        setDropDownMenu((prev => !prev))
+    }
 
     const handleMouseOver = () => {
-        dispatch({ type: 'TOGGLE_FOCUS' })
         setDropDownMenu(true)
     }
     const handleMouseOut = () => {
-        dispatch({ type: 'TOGGLE_FOCUS' })
         setDropDownMenu(false)
     }
-    const handleCloseModal = () => {
-        setDropDownMenu((prev => !prev))
-        // dispatch({ type: 'TOGGLE_FOCUS' })
 
-    }
     return (
         <div className={`relative w-full`} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+
+            {dropdownMenuOpen && <div className="fixed top-0 left-0 w-screen h-screen bg-[#fff4] backdrop-blur-md z-[9]"></div>
+            }
             <div style={{ backgroundImage: `radial-gradient( circle farthest-corner at 0.2% 0.5%,  ${color1} 3.7%, ${color2}` }} className={`w-full rounded-xl hover:shadow-2xl transition-all text-white cursor-pointer px-6 py-12 text-center shadow-xl relative`}>
                 {title}
             </div>
-            <div className={`relative drop_menu p-4 md:p-6 lg:p-12 grid place-items-center border ${dropdownMenuOpen ? "drop_menu_open" : ""}`}>
+            <div className={`relative drop_menu p-4 md:p-6 lg:p-12 grid place-items-center border z-[1000] ${dropdownMenuOpen ? "drop_menu_open" : ""}`}>
                 <button onClick={handleCloseModal} className="absolute top-4 right-4 text-red-500 font-bold">Close</button>
                 {children}
             </div>

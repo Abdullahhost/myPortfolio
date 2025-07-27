@@ -1,22 +1,13 @@
 
-"use client"
 
-import { useContext } from "react"
 import HoverFeatures from "./component/HoverFeatures"
 import Image from "next/image"
-import { ToggleContext } from "@/app/context/ToggleContex"
 
 
 const WhatWeDo = () => {
 
-    const { state } = useContext(ToggleContext)
-    // const [dropdownMenuOpen, setDropDownMenu] = useState<boolean>(false)
     return (
         <section className="w-full bg-[#272727] py-24 flex flex-col items-center min-h-[80vh]">
-            {state.focusToggle ? <div className="fixed pointer-events-none top-0 left-0 w-full h-screen bg-[#0008] z-40 backdrop-blur-lg">
-
-            </div> : ""
-            }
             <h2 className="text-[1.8rem] md:text-[2rem]  lg:text-[2.2rem] font-bold uppercase my-6 text-white">What We Do</h2>
 
             <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center p-2 md:p-6 lg:p-16 ">

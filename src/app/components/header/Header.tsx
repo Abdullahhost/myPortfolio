@@ -1,5 +1,6 @@
 
 
+import { CSSProperties } from "react"
 import ToggleBtn from "../button/ToggleBtn"
 import MenuItem from "../menubar/MenuItem"
 import ResponsiveMenu from "../menubar/responsiveMenu/ResponsiveMenu"
@@ -15,10 +16,10 @@ const Header = () => {
                     <menu className="relative zIndex">
                         <ResponsiveMenu />
                         <ul className="hidden lg:flex items-center gap-10">
-                            <MenuItem linkName={"Home"} />
-                            <MenuItem linkName={"About"} />
-                            <MenuItem linkName={"Project"} />
-                            <MenuItem linkName={"Contact"} />
+                            <MenuItem style={{ '--y': 1 } as CSSProperties} linkName={"Home"} />
+                            <MenuItem style={{ '--y': 2 } as CSSProperties} linkName={"About"} />
+                            <MenuItem style={{ '--y': 3 } as CSSProperties} linkName={"Project"} />
+                            <MenuItem style={{ '--y': 4 } as CSSProperties} linkName={"Contact"} />
                         </ul>
                         <div className="block lg:hidden">
                             <ToggleBtn />

@@ -35,7 +35,7 @@ const MenuItem: React.FC<IProps> = ({ linkName, fontSize, onClick }) => {
                     <span
                         style={{ fontSize: `${fontSize}px`, lineHeight: `${fontSize! + 10}px` }}
                         ref={text1Ref}
-                        className={`inline-block z-50 px-0
+                        className={`inline-block z-20 px-0
                                     relative parrent lg:text-[1rem] 
                         ${fontSize ? "py-0 leading-10" : "py-4"}`} >
 

@@ -44,6 +44,7 @@ export interface IProps {
     linkName: string;
     fontSize?: number
     onClick?: () => void
+    style?: React.CSSProperties
 }
 
 
