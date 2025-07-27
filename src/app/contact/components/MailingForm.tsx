@@ -12,8 +12,7 @@ const MailingForm = () => {
                     width={500}
                     height={500}
                     alt="Profile"
-                    src={"/handshake.jfif"}
-                    priority={true}
+                    src={"/handshake.webp"}
                 />
             </div>
             <div className="w-full xl:max-w-[55vw] mt-0 md:mt-8">
